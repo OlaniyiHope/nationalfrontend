@@ -1,0 +1,116 @@
+.site-footer {
+  background: #36373b;
+  color: #cfcfd6;
+  margin-top: 3rem;
+}
+
+.site-footer__top {
+  display: grid;
+  grid-template-columns: 1.2fr 2fr 1.2fr;
+  gap: 2.5rem;
+  padding: 3rem 1rem 2rem;
+}
+
+.site-footer__wordmark {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #fff;
+}
+.site-footer__brand p {
+  margin-top: 0.5rem;
+  font-size: 0.85rem;
+  color: #9a9aa2;
+}
+
+.site-footer__columns {
+  display: flex;
+  gap: 2.5rem;
+}
+.site-footer__column h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin-bottom: 0.75rem;
+}
+.site-footer__column ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.site-footer__column a {
+  color: #b8b8c0;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+.site-footer__column a:hover { color: #fff; }
+
+.site-footer__newsletter h3 {
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #fff;
+  margin-bottom: 0.5rem;
+}
+.site-footer__newsletter p {
+  font-size: 0.85rem;
+  color: #9a9aa2;
+  margin-bottom: 0.75rem;
+}
+.site-footer__newsletter-form {
+  display: flex;
+  gap: 0.5rem;
+}
+.site-footer__newsletter-form input {
+  flex: 1;
+  border: none;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
+  font-size: 0.85rem;
+}
+.site-footer__newsletter-form button {
+background: linear-gradient(90deg, #007a47 0%, #007a47 60%, #147a42 75%, #e81f27 100%);
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  padding: 0 1rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.site-footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #2a2a32;
+  padding: 1.25rem 1rem;
+  font-size: 0.8rem;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+.site-footer__legal {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.site-footer__legal a {
+  color: #9a9aa2;
+  text-decoration: none;
+}
+.site-footer__legal a:hover { color: #fff; }
+
+@media (max-width: 860px) {
+  .site-footer__top {
+    grid-template-columns: 1fr;
+  }
+  .site-footer__columns {
+    flex-wrap: wrap;
+    gap: 1.5rem 2rem;
+  }
+}

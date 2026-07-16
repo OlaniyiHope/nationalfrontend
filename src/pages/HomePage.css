@@ -1,0 +1,121 @@
+.home {
+  padding: 2rem 0 3rem;
+}
+
+.home__grid {
+  display: grid;
+  grid-template-columns: 1fr 1.6fr 1fr;
+  gap: 2rem;
+}
+
+.home__latest h2,
+.home__top h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  border-bottom: 2px solid #c0122f;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.home__latest ul,
+.home__top ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+}
+
+.home__latest-time {
+  display: block;
+  font-size: 0.7rem;
+  color: #9a9aa2;
+  margin-bottom: 0.15rem;
+}
+
+.home__latest a,
+.home__top a {
+  color: #1a1a1e;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+.home__latest a:hover,
+.home__top a:hover { color: #c0122f; }
+
+.home__feature-image {
+  background: linear-gradient(135deg, #e8e8ee, #d3d3dc);
+  aspect-ratio: 16 / 10;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.home__feature h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.75rem;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+.home__feature p {
+  color: #4a4a52;
+  line-height: 1.6;
+}
+
+@media (max-width: 960px) {
+  .home__grid {
+    grid-template-columns: 1fr;
+  }
+}
+.home__top-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.top-story {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 14px;
+  padding: 14px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.top-story:last-child {
+  border-bottom: none;
+}
+
+.top-story__content {
+  flex: 1;
+}
+
+.top-story__title {
+  display: block;
+  color: #111;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.top-story__title:hover {
+  color: #c0122f;
+}
+
+.top-story__category {
+  display: inline-block;
+  margin-top: 8px;
+  font-size: 0.78rem;
+  color: #007a47;
+  font-weight: 600;
+}
+
+.top-story__image {
+  width: 90px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 4px;
+  flex-shrink: 0;
+}

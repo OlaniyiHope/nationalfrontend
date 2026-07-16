@@ -1,0 +1,288 @@
+.advertise section {
+  padding: 60px 0;
+}
+
+/* --- Hero --- */
+.advertiseHero {
+  background: #eef1f2;
+}
+
+.advertiseHero__grid {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 40px;
+  align-items: center;
+}
+
+.advertiseHero__lead {
+  font-family: Georgia, serif;
+  font-size: 1.9rem;
+  line-height: 1.4;
+  color: #222;
+  margin: 0 0 20px;
+}
+
+.advertiseHero__sub {
+  color: #444;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin: 0 0 30px;
+}
+
+.downloadMediaBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+background: linear-gradient(90deg, #007a47 0%, #007a47 60%, #147a42 75%, #e81f27 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  padding: 14px 24px;
+  border-radius: 4px;
+}
+
+.downloadMediaBtn:hover {
+  background: #d53826;
+}
+
+.downloadMediaBtn__icon {
+  font-size: 1.1rem;
+}
+
+.advertiseHero__image {
+  height: 260px;
+  background: #dfe4e6;
+  border-radius: 6px;
+}
+
+/* --- Stats --- */
+.advertiseStats {
+  text-align: center;
+}
+
+.advertiseStats h2 {
+  font-family: Georgia, serif;
+  font-size: 1.6rem;
+  color: #222;
+  margin: 0 0 40px;
+  font-weight: 400;
+}
+
+.advertiseStats__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.statCard {
+  background: #fceceb;
+  border-radius: 8px;
+  padding: 40px 20px;
+}
+
+.statCard__icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+  color: #ef432f;
+}
+
+.statCard__value {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #ef432f;
+  margin-bottom: 6px;
+}
+
+.statCard__label {
+  font-size: 0.85rem;
+  letter-spacing: 0.5px;
+  color: #444;
+}
+
+/* --- Rate cards --- */
+.advertiseRates {
+  background: #eef1f2;
+  text-align: center;
+}
+
+.advertiseRates h2 {
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 0 0 40px;
+  color: #222;
+}
+
+.advertiseRates__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+}
+
+.rateCard {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+background: linear-gradient(90deg, #007a47 0%, #007a47 60%, #147a42 75%, #e81f27 100%);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 14px 22px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.rateCard:hover {
+  background: #d53826;
+}
+
+.rateCard__icon {
+  font-size: 0.95rem;
+}
+
+/* --- Creative sizes --- */
+.advertiseCreative {
+  text-align: center;
+}
+
+.advertiseCreative h2 {
+  font-family: Georgia, serif;
+  font-size: 1.7rem;
+  font-weight: 400;
+  margin: 0 0 30px;
+  color: #222;
+}
+
+.creativeTabs {
+  display: inline-flex;
+  margin-bottom: 40px;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.creativeTabs button {
+  background: #f2ede8;
+  color: #333;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+.creativeTabs button.is-active {
+  background: #2b1c14;
+  color: #fff;
+}
+
+.creativeSizes__grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.creativeSize {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.creativeSize img {
+  width: 60px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.creativeSize__label {
+  color: #ef432f;
+  font-weight: 700;
+  margin-right: 8px;
+}
+
+.creativeSize__dims {
+  color: #888;
+  font-size: 0.9rem;
+}
+
+/* --- Contact CTA --- */
+.advertiseContact {
+  background: #111;
+  color: #fff;
+  text-align: center;
+}
+
+.advertiseContact h2 {
+  font-family: Georgia, serif;
+  font-size: 2rem;
+  margin: 0 0 10px;
+}
+
+.advertiseContact > .container > p {
+  color: #ccc;
+  margin: 0 0 40px;
+}
+
+.advertiseContact__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.execCard h3 {
+  color: #ef432f;
+  font-family: Georgia, serif;
+  font-size: 1.2rem;
+  margin: 0 0 10px;
+  display: inline-block;
+  border-bottom: 2px solid #ef432f;
+  padding-bottom: 4px;
+}
+
+.execCard a {
+  display: block;
+  color: #ddd;
+  text-decoration: none;
+  font-size: 0.95rem;
+  margin-top: 6px;
+}
+
+.execCard a:hover {
+  color: #ef432f;
+}
+
+/* --- Responsive --- */
+@media (max-width: 900px) {
+  .advertiseHero__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advertiseHero__image {
+    display: none;
+  }
+
+  .advertiseStats__grid,
+  .advertiseContact__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .creativeSizes__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .advertiseRates__grid {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

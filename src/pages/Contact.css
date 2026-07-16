@@ -1,0 +1,231 @@
+.contact {
+  margin: 30px 0 80px;
+}
+
+/* --- Title bar (same pattern as About/Category pages) --- */
+.contactTitle {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.contactTitle span {
+  width: 22px;
+  height: 22px;
+background: linear-gradient(90deg, #007a47 0%, #007a47 60%, #147a42 75%, #e81f27 100%);
+  margin-right: 14px;
+}
+
+.contactTitle h1 {
+  font-size: 2.4rem;
+  font-family: Georgia, serif;
+  color: #555;
+  margin: 0;
+}
+
+.contactTitle div {
+  flex: 1;
+  height: 1px;
+  background: #ddd;
+  margin-left: 20px;
+}
+
+/* --- Card --- */
+.contactCard {
+  max-width: 620px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.contactCard__topBar {
+  height: 10px;
+ background: linear-gradient(90deg, #007a47 0%, #007a47 60%, #147a42 75%, #e81f27 100%);
+}
+
+.contactCard__header {
+  padding: 24px 24px 20px;
+  border-bottom: 1px solid #eee;
+}
+
+.contactCard__header h2 {
+  font-family: Arial, sans-serif;
+  font-size: 1.7rem;
+  margin: 0 0 20px;
+  color: #222;
+}
+
+.contactCard__account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 12px 0;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+}
+
+.contactCard__accountText {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  flex: 1;
+}
+
+.contactCard__email {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.contactCard__notShared {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  color: #777;
+}
+
+.contactCard__mailIcon,
+.contactCard__accountIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 3px;
+  background: #ccc;
+  display: inline-block;
+}
+
+.contactCard__required {
+  color: #ef432f;
+  font-size: 0.85rem;
+  margin: 14px 0 0;
+}
+
+/* --- Form --- */
+.contactForm {
+  padding: 8px 0;
+}
+
+.contactForm__field {
+  padding: 20px 24px;
+  border-bottom: 1px solid #eee;
+}
+
+.contactForm__field label {
+  display: block;
+  font-size: 1rem;
+  color: #222;
+  margin-bottom: 12px;
+}
+
+.required {
+  color: #ef432f;
+}
+
+.contactForm__field input,
+.contactForm__field textarea {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  padding: 6px 2px 10px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: #222;
+  outline: none;
+  resize: vertical;
+  background: transparent;
+}
+
+.contactForm__field input::placeholder,
+.contactForm__field textarea::placeholder {
+  color: #999;
+}
+
+.contactForm__field input:focus,
+.contactForm__field textarea:focus {
+  border-bottom: 2px solid #ef432f;
+}
+
+.fieldError {
+  display: block;
+  color: #ef432f;
+  font-size: 0.8rem;
+  margin-top: 8px;
+}
+
+.contactForm__actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px 24px 24px;
+}
+
+.contactForm__actions button[type="submit"] {
+background: linear-gradient(90deg, #007a47 0%, #007a47 60%, #147a42 75%, #e81f27 100%);
+  color: #fff;
+  border: none;
+  padding: 10px 28px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 0.95rem;
+  cursor: pointer;
+}
+
+.contactForm__actions button[type="submit"]:hover {
+  background: #d53826;
+}
+
+.contactForm__clear {
+  background: none;
+  border: none;
+  color: #555;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.contactForm__clear:hover {
+  color: #ef432f;
+}
+
+/* --- Success state --- */
+.contactCard__success {
+  padding: 40px 24px;
+  text-align: center;
+}
+
+.contactCard__success h3 {
+  font-family: Georgia, serif;
+  color: #222;
+  margin: 0 0 10px;
+}
+
+.contactCard__success p {
+  color: #666;
+  margin: 0 0 20px;
+}
+
+.contactCard__success button {
+background: linear-gradient(90deg, #007a47 0%, #007a47 60%, #147a42 75%, #e81f27 100%);
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* --- Responsive --- */
+@media (max-width: 700px) {
+  .contactCard {
+    max-width: 100%;
+  }
+
+  .contactForm__field {
+    padding: 16px 18px;
+  }
+
+  .contactCard__header {
+    padding: 20px 18px 16px;
+  }
+}
