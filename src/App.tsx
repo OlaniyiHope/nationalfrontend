@@ -68,18 +68,14 @@ const App = () => (
       
           <Route path="/login" element={<Login />} />
  
-          <Route
-            path="/single"
-            element={<SinglePage />}
-          />
+  <Route path="/single/:slug" element={<SinglePage />} />
        
           <Route path="/calls-for-paper" element={<CallsForPapers />} />
           <Route path="/instituitional-access" element={<Business />} />
         
           <Route path="/policies" element={<Policies />} />
 
-          <Route path="/category" element={<CategoryPage />} />
-        
+         <Route path="/category/:slug" element={<CategoryPage />} />
           <Route path="/checkout" element={<CheckoutPage />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/advertise" element={<AdvertisePage />} />
