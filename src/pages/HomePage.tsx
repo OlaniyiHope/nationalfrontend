@@ -108,7 +108,7 @@ export default function HomePage() {
                     <span className="home__latest-time">
                       {timeAgo(item.createdAt)}
                     </span>
-                    <a href={`/post/${item.slug}`}>{item.title}</a>
+                    <a href={`/single/${item.slug}`}>{item.title}</a>
                   </li>
                 ))}
               </ul>
@@ -136,7 +136,7 @@ export default function HomePage() {
                   aria-hidden="true"
                 />
                 <h1>
-                  <a href={`/post/${featured.slug}`}>{featured.title}</a>
+                  <a href={`/single/${featured.slug}`}>{featured.title}</a>
                 </h1>
                 <p>{featured.excerpt}</p>
               </>
@@ -160,7 +160,7 @@ export default function HomePage() {
                   <article className="top-story" key={story._id}>
                     <div className="top-story__content">
                       <a
-                        href={`/post/${story.slug}`}
+                        href={`/single/${story.slug}`}
                         className="top-story__title"
                       >
                         {story.title}
