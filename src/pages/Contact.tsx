@@ -17,6 +17,21 @@ const initialForm: ContactFormData = {
   message: "",
 };
 
+const CONTACT_EMAILS = [
+  "Info@nationaldailynewspaper.com",
+  "Admin@nationaldailynewspaper.com",
+  "Newsroom@nationaldailynewspaper.com",
+];
+
+const CONTACT_NUMBERS = [
+  "+234 808 989 6814",
+  "+234 906 660 0647",
+  "+234 813 882 3325",
+  "+234 815 477 3048",
+];
+
+const CONTACT_ADDRESS = "Km, Lagos-Abeokuta, Papalanto, Ogun State, Nigeria";
+
 export default function Contact() {
   const [form, setForm] = useState<ContactFormData>(initialForm);
   const [errors, setErrors] = useState<Partial<Record<keyof ContactFormData, string>>>({});
@@ -71,6 +86,35 @@ export default function Contact() {
             <div></div>
           </div>
 
+          <div className="contactInfo">
+            <div className="contactInfo__block">
+              <h3>Email</h3>
+              <ul>
+                {CONTACT_EMAILS.map((email) => (
+                  <li key={email}>
+                    <a href={`mailto:${email}`}>{email}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="contactInfo__block">
+              <h3>Contact numbers</h3>
+              <ul>
+                {CONTACT_NUMBERS.map((number) => (
+                  <li key={number}>
+                    <a href={`tel:${number.replace(/\s+/g, "")}`}>{number}</a>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div className="contactInfo__block">
+              <h3>Address</h3>
+              <p>{CONTACT_ADDRESS}</p>
+            </div>
+          </div>
+
           <div className="contactCard">
             <div className="contactCard__topBar"></div>
 
@@ -81,7 +125,7 @@ export default function Contact() {
                 <span className="contactCard__accountIcon" aria-hidden="true" />
                 <div className="contactCard__accountText">
                   <span className="contactCard__email">
-                    enquiries@punchng.com
+                    Info@nationaldailynewspaper.com
                   </span>
                   <span className="contactCard__notShared">
                     <span className="contactCard__mailIcon" aria-hidden="true" />
