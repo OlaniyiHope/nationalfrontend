@@ -114,7 +114,7 @@ export default function Header() {
       <section className="top-panel">
         <div className="container top-panel__inner">
           <ul>
-            <li><Link to="/advertise-with-us">Advertise with us</Link></li>
+            <li><Link to="/advertise">Advertise with us</Link></li>
             <li>{today}</li>
           </ul>
         </div>

@@ -89,7 +89,7 @@ export default function Footer() {
         <p style={{color: "white"}}>© {year} The Daily Herald. All rights reserved.</p>
         <ul className="site-footer__legal">
           <li><Link to="/about">About us</Link></li>
-          <li><Link to="/advertise-with-us">Advertise with us</Link></li>
+          <li><Link to="/advertise">Advertise with us</Link></li>
           <li><Link to="/contact">Contact</Link></li>
           <li><Link to="/privacy-policy">Privacy Policy</Link></li>
         </ul>
