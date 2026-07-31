@@ -56,9 +56,9 @@ const mobileSizes: CreativeSize[] = [
 ];
 
 const executives: AdExecutive[] = [
-  { name: "Yomi Onileowo", email: "oonileowo@punchng.com", phone: "08037828693" },
-  { name: "Mary Stanley-Ubani", email: "mstanleyubani@punchng.com", phone: "08023359117" },
-  { name: "Abisayo Fakiyesi", email: "afakiyesi@punchng.com", phone: "08155685676" },
+  { name: "Yomi Onileowo", email: "oonileowo@nationaldailynewspaper.com", phone: "08037828693" },
+  { name: "Mary Stanley-Ubani", email: "mstanleyubani@nationaldailynewspaper.com", phone: "08023359117" },
+  { name: "Abisayo Fakiyesi", email: "afakiyesi@nationaldailynewspaper.com", phone: "08155685676" },
 ];
 
 function StatIcon({ type }: { type: StatItem["icon"] }) {
@@ -102,7 +102,7 @@ export default function AdvertisePage() {
           <div className="container advertiseHero__grid">
             <div className="advertiseHero__text">
               <p className="advertiseHero__lead">
-                Punch Digital, the digital publishing division of Nigeria's most
+                National Daily News Paper Digital, the digital publishing division of Nigeria's most
                 widely read newspaper, stands as the leading multimedia
                 newspaper group in the country, reaching millions of readers
                 both locally and internationally.
@@ -127,7 +127,7 @@ export default function AdvertisePage() {
         {/* Stats */}
         <section className="advertiseStats">
           <div className="container">
-            <h2>Punch Digital reaches a growing global audience</h2>
+            <h2> National Daily News Paper  Digital reaches a growing global audience</h2>
 
             <div className="advertiseStats__grid">
               {stats.map((stat) => (
@@ -199,7 +199,7 @@ export default function AdvertisePage() {
         <section className="advertiseContact">
           <div className="container">
             <h2>Contact us to get started</h2>
-            <p>Punch Digital Advert Executives</p>
+            <p> National Daily News Paper  Digital Advert Executives</p>
 
             <div className="advertiseContact__grid">
               {executives.map((exec) => (

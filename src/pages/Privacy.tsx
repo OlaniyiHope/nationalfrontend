@@ -2,26 +2,53 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./AboutPage.css";
 
+import {
+  FaFacebookF,
+  FaInstagram,
+  FaXTwitter,
+  FaLinkedinIn,
+  FaYoutube,
+} from "react-icons/fa6";
+import { IconType } from "react-icons";
+
 interface SocialLink {
   platform: string;
   handle: string;
-  icon: string;
+  icon: IconType;
 }
-
 const paragraphs: string[] = [
-  "On August 8, 1970, PUNCH (Nigeria) Limited was registered under the Companies Act of 1968 to engage in the business of publishing newspapers, magazines and other periodicals. It was designed to inform, educate and entertain Nigerians and the world at large.",
-  'In 1971, the company made its debut with the publication of HAPPY HOME, a glossy, family-oriented magazine. Its first editor was Bunmi Sofola. On Sunday, March 18, 1973, its first weekly newspaper, SUNDAY PUNCH hit the newsstand. The first editor was Ajibade Fashina Thomas. The newspaper was designed "to give our country a unique Sunday paper which combines the best in serious and popular journalism" with refreshing information and entertainment.',
-  'On November 1, 1976, the daily tabloid, THE PUNCH, was born. Designed as "the lively paper for lively minds", it was to address most of the shortcomings and inadequacies of the established Nigerian newspapers and to be "swingingly elegant as well as socially concerned and seriously responsible." Its pioneer editor was Dayo Wright.',
-  "In its bid to perform its constitutionally assigned responsibilities, the company was shutdown many times by the powers-that-be. Many of its employees were also harassed and detained by successive military regimes.",
-  "The company has a board of directors which is its highest policy-making organ. The current chairman of the board is Mrs. Angela Emuwa. The first chairman was Chief James Olubunmi Aboderin, an accomplished accountant who died in 1984 from a brief illness. The company's policies and directives are implemented by a management team led by the managing director and Editor-in-Chief. The current Managing Director is Mr. Joseph Adeyeye. Though a corporate business entity which exists to make profit, it...",
+   "NationalDaily Newspaper is a trusted daily national newspaper dedicated to delivering accurate, timely, and balanced news to readers across the country. With a strong national presence and comprehensive coverage, we report on the stories that matter most—from politics, business, the economy, and education to health, sports, entertainment, technology, and lifestyle.",
+"Our mission is to inform, educate, and empower the public through credible journalism that upholds the highest standards of integrity, fairness, and professionalism. We are committed to providing factual reporting, insightful analysis, and diverse perspectives that help our readers understand the issues shaping our nation.",
+"At NationalDaily Newspaper, we believe that a well-informed society is the foundation of a strong democracy. Our team of experienced journalists and editors works tirelessly to deliver reliable news and compelling stories that inspire informed discussions and positive change.",
+"As a truly national newspaper, we are committed to serving every region and every community, ensuring that the voices and experiences of people across the country are represented. Whether in print or through our digital platforms, National daily Newspaper remains your trusted source for credible news, insightful reporting, and dependable information—every day."
 ];
 
 const socialLinks: SocialLink[] = [
-  { platform: "Facebook", handle: "@punchnewspaper", icon: "facebook" },
-  { platform: "Instagram", handle: "@punchnewspaper", icon: "instagram" },
-  { platform: "Twitter", handle: "@mobile_punch", icon: "twitter" },
-  { platform: "LinkedIn", handle: "@punchnewspaper", icon: "linkedin" },
-  { platform: "YouTube", handle: "@punchnewspaper", icon: "youtube" },
+  {
+    platform: "Facebook",
+    handle: "@nationaldailynewspaper",
+    icon: FaFacebookF,
+  },
+  {
+    platform: "Instagram",
+    handle: "@nationaldailynewspaper",
+    icon: FaInstagram,
+  },
+  {
+    platform: "Twitter",
+    handle: "@nationaldailynewspaper",
+    icon: FaXTwitter,
+  },
+  {
+    platform: "LinkedIn",
+    handle: "@nationaldailynewspaper",
+    icon: FaLinkedinIn,
+  },
+  {
+    platform: "YouTube",
+    handle: "@nationaldailynewspaper",
+    icon: FaYoutube,
+  },
 ];
 
 export default function Privacy() {
@@ -51,20 +78,27 @@ export default function Privacy() {
                 <div></div>
               </div>
 
-              <div className="aboutFollow__list">
-                {socialLinks.map((s) => {
-                  const linkProps = {
-                    href: "#0",
-                    className: `followItem followItem--${s.icon}`,
-                  };
-                  return (
-                    <a key={s.platform} {...linkProps}>
-                      <span className="followItem__icon" aria-hidden="true" />
-                      <span className="followItem__handle">{s.handle}</span>
-                    </a>
-                  );
-                })}
-              </div>
+         <div className="aboutFollow__list">
+  {socialLinks.map((s) => {
+    const Icon = s.icon;
+
+    return (
+      <a
+        key={s.platform}
+        href="#0"
+        className="followItem"
+      >
+        <span className="followItem__icon">
+          <Icon />
+        </span>
+
+        <span className="followItem__handle">
+          {s.handle}
+        </span>
+      </a>
+    );
+  })}
+</div>
             </aside>
           </div>
         </div>

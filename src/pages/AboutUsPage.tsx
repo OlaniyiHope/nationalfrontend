@@ -21,6 +21,7 @@ const paragraphs: string[] = [
 "At NationalDaily Newspaper, we believe that a well-informed society is the foundation of a strong democracy. Our team of experienced journalists and editors works tirelessly to deliver reliable news and compelling stories that inspire informed discussions and positive change.",
 "As a truly national newspaper, we are committed to serving every region and every community, ensuring that the voices and experiences of people across the country are represented. Whether in print or through our digital platforms, National daily Newspaper remains your trusted source for credible news, insightful reporting, and dependable information—every day.",
 ];
+
 const socialLinks: SocialLink[] = [
   {
     platform: "Facebook",
@@ -69,46 +70,27 @@ export default function AboutUsPage() {
               ))}
             </article>
 
-            <aside className="aboutFollow">
-              <div className="aboutFollow__heading">
-                <div></div>
-                <span>Follow Us</span>
-                <div></div>
-              </div>
+          <div className="aboutFollow__list">
+  {socialLinks.map((s) => {
+    const Icon = s.icon;
 
-              <div className="aboutFollow__list">
-                {socialLinks.map((s) => {
-                  const linkProps = {
-                    href: "#0",
-                    className: `followItem followItem--${s.icon}`,
-                  };
-                  return (
-                    <a key={s.platform} {...linkProps}>
-                   {socialLinks.map((s) => {
-  const Icon = s.icon;
+    return (
+      <a
+        key={s.platform}
+        href="#0"
+        className="followItem"
+      >
+        <span className="followItem__icon">
+          <Icon />
+        </span>
 
-  return (
-    <a
-      key={s.platform}
-      href="#0"
-      className="followItem"
-    >
-      <span className="followItem__icon">
-        <Icon />
-      </span>
-
-      <span className="followItem__handle">
-        {s.handle}
-      </span>
-    </a>
-  );
-})}
-                      <span className="followItem__handle">{s.handle}</span>
-                    </a>
-                  );
-                })}
-              </div>
-            </aside>
+        <span className="followItem__handle">
+          {s.handle}
+        </span>
+      </a>
+    );
+  })}
+</div>
           </div>
         </div>
       </main>
