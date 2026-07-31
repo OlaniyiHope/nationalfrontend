@@ -127,9 +127,9 @@ export default function Header() {
           {/* Social icons (left) */}
           <div className="social-buttons">
             <ul>
-              <li><a href="https://twitter.com/" target="_blank" rel="noreferrer" aria-label="X">𝕏</a></li>
-              <li><a href="https://instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">IG</a></li>
-              <li><a href="https://facebook.com/" target="_blank" rel="noreferrer" aria-label="Facebook">FB</a></li>
+              <li><a href="https://twitter.com/nationaldailynewspaper" target="_blank" rel="noreferrer" aria-label="X">𝕏</a></li>
+              <li><a href="https://instagram.com/nationaldailynewspaper" target="_blank" rel="noreferrer" aria-label="Instagram">IG</a></li>
+              <li><a href="https://facebook.com/nationaldailynewspaper" target="_blank" rel="noreferrer" aria-label="Facebook">FB</a></li>
             </ul>
             <button
               className="icon-btn search-toggle"
