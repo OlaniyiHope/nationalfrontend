@@ -2,7 +2,7 @@ import { useState } from "react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import "./AdvertisePage.css";
-
+import cardImage from "./card.jpeg";
 interface StatItem {
   value: string;
   label: string;
@@ -160,7 +160,25 @@ export default function AdvertisePage() {
             </div>
           </div>
         </section>
+{/* Newspaper Print Rate Card */}
+<section className="advertisePrintRates">
+  <div className="container">
+    <h2>PRINT ADVERTISEMENT RATE CARD</h2>
 
+    <p className="advertisePrintRates__text">
+      View our official National Daily Newspaper print advertisement rate card
+      for colour, black &amp; white, special positions, inserts, picture &
+      caption, and other advertising options.
+    </p>
+
+    <div className="advertisePrintRates__image">
+      <img
+        src={cardImage}
+        alt="National Daily Newspaper Advertisement Rate Card"
+      />
+    </div>
+  </div>
+</section>
         {/* Creative sizes */}
         <section className="advertiseCreative">
           <div className="container">
